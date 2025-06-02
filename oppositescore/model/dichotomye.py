@@ -3,6 +3,8 @@
 @File     : dichotomye.py
 @Author   : Shaobo Cui
 @Date     : 08.09.2024 12:04
+@Reference: https://github.com/SeanLee97/AnglE/
+
 """
 
 import os
