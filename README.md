@@ -103,8 +103,3 @@ print('Opposite Score:', opposite_score)
 
 # &copy; License
 This project is licensed under the MIT License. :blush:
-
-
-1. The `neutral` should be removed. 
-2. All the unrelated folder should be removed. 
-
