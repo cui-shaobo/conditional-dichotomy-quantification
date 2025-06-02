@@ -101,5 +101,10 @@ print('Opposite Score:', opposite_score)
 # Reference Papers
 
 
-# &copy; License
-This project is licensed under the MIT License. :blush:
+## 🛡 Responsible Usage
+
+This software is released for research and educational purposes only. It is intended to support studies on argument contrast, causal reasoning, and sentence embeddings. 
+
+Please ensure proper attribution when using the code, models, or datasets in publications or derivative work. Commercial use are expected to contact authors for explicit permission.
+
+For questions or collaborations, feel free to contact the authors.
