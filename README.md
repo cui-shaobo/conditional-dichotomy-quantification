@@ -108,3 +108,6 @@ This software is released for research and educational purposes only. It is inte
 Please ensure proper attribution when using the code, models, or datasets in publications or derivative work. Commercial use are expected to contact authors for explicit permission.
 
 For questions or collaborations, feel free to contact the authors.
+
+# Dichotomous Score
+

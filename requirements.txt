@@ -1,0 +1,14 @@
+bitsandbytes
+datasets
+peft
+boltons
+scikit-learn
+huggingface-hub==0.24.6
+scipy==1.13.1
+spacy==3.7.6
+tokenizers==0.19.1
+torch==2.4.1
+torchaudio==2.4.1
+torchvision==0.19.1
+tqdm==4.66.5
+transformers==4.44.2
