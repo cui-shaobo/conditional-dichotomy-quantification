@@ -10,52 +10,24 @@ pip install -r requirements.txt
 python -m spacy download en_core_web_sm
 ```
 
-## Irrelevant Sentence Generation
 
-1\. Make a new file.
-```bash
-touch api_key/config.json
-```
-2\. Add the OpenAI API key.
+## 🗂️ Supportive Datasets (Quick Overview)
 
-```json
-{
-    "openai_api_key": "..."
-}
-```
+| Scenario | Train | Val | Test | Total | Avg len (ctx) | Avg len (pos/neg/neu) |
+|----------|------:|----:|-----:|------:|--------------:|----------------------:|
+| Debate               | 58 k | 21 k | 16 k | **95 k** | 8.8 | 11.6 / 11.5 / 11.2 |
+| Defeasible NLI       | 8 k  | 8 k  | 424 k | **441 k** | 23.1 | 8.5 / 8.3 / 8.4 |
+| Causal Reasoning     | 14 k | 18 k | 16 k | **48 k** | 21.0 | 8.4 / 10.1 / 9.1 |
 
-3\. Copy the raw data from `/mnt/lia/scratch/yifeng/dichotomous-score/data/{dataset_name}` to `data/{dataset_name}` folder.
+![Sentence-length distributions](./figures/sentence_length.png)
 
-VERY IMPORTANT!!!!!!!!
+**Figure 1.** Sentence-length distributions for contexts, positive, negative, and neutral arguments across datasets.
 
-4\. Run `dichotomy_irrelevant.py`. 
 
-```bash
-python neutral_generation_irrelevant_various_pattern_main.py --data_dir 
-```
+> **Why it matters**  
+> *Balanced lengths & human-verified neutrals stop models from “cheating” on superficial cues and keep the focus on genuine oppositional content.*
 
-Arguments:
-```
-usage: dichotomy_irrelevant.py [-h] [--data_dir DATA_DIR]
-                               [--dataset_name DATASET_NAME] [--batch_size BATCH_SIZE]
-                               [--split SPLIT] [--start START] [--gpt_model GPT_MODEL]
 
-optional arguments:
-  -h, --help            show this help message and exit
-  --data_dir DATA_DIR
-  --dataset_name DATASET_NAME
-  --batch_size BATCH_SIZE
-  --split SPLIT
-  --start START
-  --gpt_model GPT_MODEL
-```
-
-5\. The processed data are saved in `data/{dataset_name}` folder with `test_processed_{model_name}.jsonl`.
-
----
----
-
-The following description is about the usage of our softwares. 
 # Opposite-Score
 Efficient embeddings and scoring mechanism for detecting contrasting or opposite relationships in text, based on a given context.
 
