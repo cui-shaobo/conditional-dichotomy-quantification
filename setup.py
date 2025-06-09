@@ -20,8 +20,8 @@ with open(os.path.join(os.path.dirname(__file__), 'requirements.txt'), encoding=
 
 setup(
     include_package_data=True,
-    name='opposite-score',
-    version='0.0.0.0.1',
+    name='oppositescore',
+    version='0.0.0.1',
     description='Optimized Text Embeddings Designed for Measuring Opposite/Contrasting Relationships',
     long_description=long_description,
     long_description_content_type='text/markdown',

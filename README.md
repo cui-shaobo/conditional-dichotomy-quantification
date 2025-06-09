@@ -17,12 +17,12 @@
 
 ## ✨ Why should I care?
 
-| Domain                                                                     | One-line use-case | Why it matters |
-|----------------------------------------------------------------------------|-------------------|----------------|
-| **Public policy**<br><img src="./docs/public_policy.png" width="280"/>     | Cluster pro ∕ con arguments from citizen consultations | Produces balanced, evidence-based draft regulations |
-| **Social media**<br><img src="./docs/social_media.png" width="280"/>       | Detect emerging polarised clusters in real time | Enables early de-escalation and healthier discourse |
-| **Journalism**<br><img src="./docs/journalism.png" width="280"/>           | Surface the strongest counter-evidence to viral claims | Speeds up balanced fact-checking & boosts information integrity |
-| **Causal analysis**<br><img src="./docs/causal_analysis.png" width="280"/> | Rank supporters vs defeaters for a suspected cause | Accelerates root-cause analysis during critical incidents |
+| Domain                                                                                                                                 | One-line use-case | Why it matters |
+|----------------------------------------------------------------------------------------------------------------------------------------|-------------------|----------------|
+| **Public policy**<br><img src="https://github.com/cui-shaobo/public-images/raw/main/oppositescore/public_policy.png" width="280"/>     | Cluster pro ∕ con arguments from citizen consultations | Produces balanced, evidence-based draft regulations |
+| **Social media**<br><img src="https://github.com/cui-shaobo/public-images/raw/main/oppositescore/social_media.png" width="280"/>       | Detect emerging polarised clusters in real time | Enables early de-escalation and healthier discourse |
+| **Journalism**<br><img src="https://github.com/cui-shaobo/public-images/raw/main/oppositescore/journalism.png" width="280"/>           | Surface the strongest counter-evidence to viral claims | Speeds up balanced fact-checking & boosts information integrity |
+| **Causal analysis**<br><img src="https://github.com/cui-shaobo/public-images/raw/main/oppositescore/causal_analysis.png" width="280"/> | Rank supporters vs defeaters for a suspected cause | Accelerates root-cause analysis during critical incidents |
 
 
 Powered by our **Opposite-Score** embeddings and three rigorously curated datasets (Debate ▪︎ Defeasible NLI ▪︎ Causal Reasoning).
@@ -34,7 +34,7 @@ Powered by our **Opposite-Score** embeddings and three rigorously curated datase
 conda create -n dichotomy python=3.9
 conda activate dichotomy
 pip install -r requirements.txt
-pip install opposite-score
+pip install oppositescore
 ```
 
 
@@ -46,7 +46,7 @@ pip install opposite-score
 | Defeasible NLI       | 8 k  | 8 k  | 424 k | **441 k** | 23.1 | 8.5 / 8.3 / 8.4 |
 | Causal Reasoning     | 14 k | 18 k | 16 k | **48 k** | 21.0 | 8.4 / 10.1 / 9.1 |
 
-![Sentence-length distributions](docs/sentence_length.png)
+![Sentence-length distributions](https://github.com/cui-shaobo/public-images/raw/main/oppositescore/sentence_length.png)
 
 **Figure 1.** Sentence-length distributions for contexts, positive, negative, and neutral arguments across datasets.
 
