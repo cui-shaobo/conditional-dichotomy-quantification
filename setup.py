@@ -7,8 +7,6 @@
 
 # -*- coding: utf-8 -*-
 
-# -*- coding: utf-8 -*-
-
 from setuptools import setup, find_packages
 import os
 
@@ -22,14 +20,14 @@ with open(os.path.join(os.path.dirname(__file__), 'requirements.txt'), encoding=
 
 setup(
     include_package_data=True,
-    name='oppositescore',
-    version='0.0.1',
+    name='opposite-score',
+    version='0.0.0.0.1',
     description='Optimized Text Embeddings Designed for Measuring Opposite/Contrasting Relationships',
     long_description=long_description,
     long_description_content_type='text/markdown',
     author='Shaobo Cui',
     author_email='shaobo.cui@epfl.ch',
-    url='https://github.com/cui-shaobo/opposite-embedding',
+    url='https://github.com/cui-shaobo/conditional-dichotomy-quantification',
     packages=find_packages(include=['oppositescore', 'oppositescore.*']),
     install_requires=requirements,
     zip_safe=False,
