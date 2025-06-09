@@ -2,14 +2,31 @@
 *A lightweight toolkit for measuring how “opposite” two texts are when they share the same context.*
 
 ---
+<details>
+<summary>📚 Table of Contents</summary>
+
+- [✨ Why should I care?](#-why-should-i-care)
+- [📦 Installation](#-installation)
+- [🗂️ Supportive Datasets (Quick Overview)](#️-supportive-datasets-quick-overview)
+- [Opposite-Score](#opposite-score)
+  - [Features](#features)
+  - [Installation](#installation-1)
+  - [💡 Usage Examples](#-usage-examples)
+- [🛡 Responsible Usage](#-responsible-usage)
+- [📊 Leaderboard: Dichotomy Quantification](#-leaderboard-dichotomy-quantification)
+
+</details>
+
 
 ## ✨ Why should I care?
-| Domain | One-line use-case | Why it matters |
-|--------|------------------|----------------|
-| **Public policy** | Cluster pro ∕ con arguments from citizen consultations | Produces balanced, evidence-based draft regulations |
-| **Social media** | Detect emerging polarised clusters in real time | Enables early de-escalation and healthier discourse |
-| **Journalism** | Surface the strongest counter-evidence to viral claims | Speeds up balanced fact-checking & boosts information integrity |
-| **Causal analysis** (finance, health, climate…) | Rank supporters vs defeaters for a suspected cause | Accelerates root-cause analysis during critical incidents |
+
+| Domain                                                                     | One-line use-case | Why it matters |
+|----------------------------------------------------------------------------|-------------------|----------------|
+| **Public policy**<br><img src="./docs/public_policy.png" width="180"/>     | Cluster pro ∕ con arguments from citizen consultations | Produces balanced, evidence-based draft regulations |
+| **Social media**<br><img src="./docs/social_media.png" width="180"/>       | Detect emerging polarised clusters in real time | Enables early de-escalation and healthier discourse |
+| **Journalism**<br><img src="./docs/journalism.png" width="180"/>           | Surface the strongest counter-evidence to viral claims | Speeds up balanced fact-checking & boosts information integrity |
+| **Causal analysis**<br><img src="./docs/causal_analysis.png" width="180"/> | Rank supporters vs defeaters for a suspected cause | Accelerates root-cause analysis during critical incidents |
+
 
 Powered by our **Opposite-Score** embeddings and three rigorously curated datasets (Debate ▪︎ Defeasible NLI ▪︎ Causal Reasoning).
 
