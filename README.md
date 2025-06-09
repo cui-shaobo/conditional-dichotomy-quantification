@@ -1,13 +1,26 @@
 # Dichotomous Score
-For the project of dichotomous score
+*A lightweight toolkit for measuring how “opposite” two texts are when they share the same context.*
 
-## Environments
+---
+
+## ✨ Why should I care?
+| Domain | One-line use-case | Why it matters |
+|--------|------------------|----------------|
+| **Public policy** | Cluster pro ∕ con arguments from citizen consultations | Produces balanced, evidence-based draft regulations |
+| **Social media** | Detect emerging polarised clusters in real time | Enables early de-escalation and healthier discourse |
+| **Journalism** | Surface the strongest counter-evidence to viral claims | Speeds up balanced fact-checking & boosts information integrity |
+| **Causal analysis** (finance, health, climate…) | Rank supporters vs defeaters for a suspected cause | Accelerates root-cause analysis during critical incidents |
+
+Powered by our **Opposite-Score** embeddings and three rigorously curated datasets (Debate ▪︎ Defeasible NLI ▪︎ Causal Reasoning).
+
+---
+## 📦 Installation
 
 ```bash
 conda create -n dichotomy python=3.9
 conda activate dichotomy
 pip install -r requirements.txt
-python -m spacy download en_core_web_sm
+pip install opposite-score
 ```
 
 
@@ -19,7 +32,7 @@ python -m spacy download en_core_web_sm
 | Defeasible NLI       | 8 k  | 8 k  | 424 k | **441 k** | 23.1 | 8.5 / 8.3 / 8.4 |
 | Causal Reasoning     | 14 k | 18 k | 16 k | **48 k** | 21.0 | 8.4 / 10.1 / 9.1 |
 
-![Sentence-length distributions](./figures/sentence_length.png)
+![Sentence-length distributions](docs/sentence_length.png)
 
 **Figure 1.** Sentence-length distributions for contexts, positive, negative, and neutral arguments across datasets.
 
@@ -47,7 +60,7 @@ pip install opposite-score==0.1.0
 
 
 
-## Usage Examples
+## 💡 Usage Examples
 
 ### For Opposite Scores of two sentence conditioned on the context.
 
@@ -70,9 +83,6 @@ print('Opposite Score:', opposite_score)
 ```
 
 
-# Reference Papers
-
-
 ## 🛡 Responsible Usage
 
 This software is released for research and educational purposes only. It is intended to support studies on argument contrast, causal reasoning, and sentence embeddings. 
@@ -81,5 +91,30 @@ Please ensure proper attribution when using the code, models, or datasets in pub
 
 For questions or collaborations, feel free to contact the authors.
 
-# Dichotomous Score
+## 📊 Leaderboard: Dichotomy Quantification
 
+| Model                  | Debate (DCF ↑) | Debate (Angle ↑) | NLI (DCF ↑) | NLI (Angle ↑) | Causal (DCF ↑) | Causal (Angle ↑) |
+|------------------------|----------------|------------------|-------------|----------------|----------------|------------------|
+| InferSent-GloVe        | 36.19          | 1.58             | 23.11       | 0.39           | 26.71          | 0.44             |
+| InferSent-fastText     | 42.02          | 4.56             | 27.66       | 1.42           | 32.36          | 1.44             |
+| USE                    | 16.53          | 3.31             | 18.07       | 1.01           | 13.54          | 0.46             |
+| BERT                   | 31.37          | 0.18             | 11.99       | 0.25           | 27.17          | 0.26             |
+| CoSENT                 | 38.49          | 0.64             | 26.86       | 0.28           | 30.07          | 0.14             |
+| SBERT                  | 31.61          | 1.50             | 22.89       | 0.64           | 22.68          | 0.43             |
+| SimCSE (BERT)          | 30.59          | 2.78             | 13.91       | 0.93           | 25.15          | 1.30             |
+| AoE (BERT)             | 26.27          | 0.48             | 24.02       | 0.10           | 30.09          | 0.11             |
+| RoBERTa                | 43.61          | 0.00             | 12.60       | 0.00           | 24.06          | 0.00             |
+| SimCSE (RoBERTa)       | 30.84          | 2.42             | 12.78       | 0.64           | 27.01          | 1.28             |
+| LLaMA-2 (7B)           | 30.46          | 16.99            | 21.25       | 8.65           | 32.80          | 5.67             |
+| LLaMA-2 (13B)          | 47.42          | 11.24            | 30.27       | 4.59           | 34.05          | 2.56             |
+| AoE (7B)               | 38.92          | 14.85            | 20.01       | 8.22           | 27.20          | 4.03             |
+| AoE (13B)              | 44.88          | 9.73             | 28.72       | 3.20           | 30.89          | 1.58             |
+| LLaMA-3.1 (8B)         | 39.81          | 10.86            | 21.70       | 5.33           | 26.38          | 2.67             |
+| LLaMA-3.1 (70B)        | 34.47          | 13.74            | 15.95       | 6.83           | 25.23          | 3.84             |
+| Ours (BERT)            | 46.97          | 30.66            | 41.72       | 3.25           | 67.59          | 20.69            |
+| Ours (RoBERTa)         | **55.93**      | **83.67**        | **47.27**   | 0.63           | **76.55**      | 5.06             |
+
+
+> 📌 *Both metrics benefit from higher values: better classification and stronger geometric contrast.*
+
+📄 [Full Table with Ablations →](./docs/leaderboard_full.pdf)

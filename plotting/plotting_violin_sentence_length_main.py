@@ -93,7 +93,7 @@ color_palette = {
     'neutral': '#9c755f'   # Soft brown
 }
 
-# Plot and save figures for each scenario
+# Plot and save docs for each scenario
 scenarios = ['A', 'B', 'C']
 for scenario in scenarios:
     scenario_data = lengths_df[lengths_df['Scenario'] == scenario]
