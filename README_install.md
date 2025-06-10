@@ -1,7 +1,7 @@
 # Opposite-Score
 Efficient embeddings and scoring mechanism for detecting contrasting or opposite relationships in text, based on a given context.
 
-[Opposite-Score](https://github.com/your-repo/opposite-score) is designed to generate embeddings and compute the **opposite-score**, which quantifies the degree of contrast or opposition between two textual outputs within the same context. This package is particularly useful in scenarios like debates, legal reasoning, and causal analysis where contrasting perspectives need to be evaluated based on shared input.
+[opposite-score](https://github.com/cuishaobo/conditional-dichotomy-quantification) is designed to generate embeddings and compute the **opposite-score**, which quantifies the degree of contrast or opposition between two textual outputs within the same context. This package is particularly useful in scenarios like debates, legal reasoning, and causal analysis where contrasting perspectives need to be evaluated based on shared input.
 
 ## Features
 - **Opposite-Score Calculation**: Computes a numerical score representing how opposite two texts are, conditioned on a shared context.
@@ -40,14 +40,10 @@ print('Opposite Score:', opposite_score)
 
 # 📧 Contact
 
-Please feel free to contact us via email: shaobo.cui@epfl.ch
+Please feel free to contact us via email: firstname.lastname@epfl.ch
 
 # Reference Papers
 
 
 # &copy; License
 This project is licensed under the MIT License. :blush:
-
-
-1. The `neutral` should be removed. 
-2. All the unrelated folder should be removed. 

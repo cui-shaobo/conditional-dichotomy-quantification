@@ -31,10 +31,11 @@ Powered by our **Opposite-Score** embeddings and three rigorously curated datase
 ## 📦 Installation
 
 ```bash
-conda create -n dichotomy python=3.9
+conda create -n dichotomy python=3.10
 conda activate dichotomy
-pip install -r requirements.txt
-pip install oppositescore
+
+## opposite-score is our implemented package: https://pypi.org/project/opposite-score/
+pip install opposite-score
 ```
 
 
@@ -58,7 +59,7 @@ pip install oppositescore
 # Opposite-Score
 Efficient embeddings and scoring mechanism for detecting contrasting or opposite relationships in text, based on a given context.
 
-[Opposite-Score](https://github.com/your-repo/opposite-score) is designed to generate embeddings and compute the **opposite-score**, which quantifies the degree of contrast or opposition between two textual outputs within the same context. This package is particularly useful in scenarios like debates, legal reasoning, and causal analysis where contrasting perspectives need to be evaluated based on shared input.
+[Opposite-Score](https://pypi.org/project/opposite-score/) is designed to generate embeddings and compute the **opposite-score**, which quantifies the degree of contrast or opposition between two textual outputs within the same context. This package is particularly useful in scenarios like debates, legal reasoning, and causal analysis where contrasting perspectives need to be evaluated based on shared input.
 
 ## Features
 - **Opposite-Score Calculation**: Computes a numerical score representing how opposite two texts are, conditioned on a shared context.
@@ -69,7 +70,7 @@ Efficient embeddings and scoring mechanism for detecting contrasting or opposite
 ## Installation
 Install Opposite-Score via pip:
 ```bash
-pip install opposite-score==0.1.0
+pip install opposite-score==0.0.1
 ```
 
 

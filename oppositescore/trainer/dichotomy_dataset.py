@@ -112,7 +112,7 @@ class DichotomyEDataTokenizer:
 
     Example::
 
-            from datasets import load_dataset
+            from data import load_dataset
             from dichotomye import DichotomyE
             for dichotomy_dataset import DichotomyEDataTokenizer
 

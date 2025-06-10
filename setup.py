@@ -10,6 +10,14 @@
 from setuptools import setup, find_packages
 import os
 
+def get_version():
+    with open("oppositescore/__init__.py", encoding="utf-8") as f:
+        for line in f:
+            if line.startswith("__version__"):
+                delim = '"' if '"' in line else "'"
+                return line.split(delim)[1]
+    raise RuntimeError("Version not found")
+
 # Read the README file for the long description
 with open(os.path.join(os.path.dirname(__file__), 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
@@ -20,8 +28,8 @@ with open(os.path.join(os.path.dirname(__file__), 'requirements.txt'), encoding=
 
 setup(
     include_package_data=True,
-    name='oppositescore',
-    version='0.0.0.1',
+    name='opposite-score',
+    version=get_version(),
     description='Optimized Text Embeddings Designed for Measuring Opposite/Contrasting Relationships',
     long_description=long_description,
     long_description_content_type='text/markdown',
@@ -33,7 +41,7 @@ setup(
     zip_safe=False,
     keywords='text embedding, NLP, opposite relationships, dichotomy',
     classifiers=[
-        'Development Status :: 1 - Production/Stable',
+        'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3.6',
@@ -41,5 +49,5 @@ setup(
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
     ],
-    python_requires='>=3.6',
+    python_requires='>=3.7, <3.12',
 )

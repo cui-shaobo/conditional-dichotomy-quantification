@@ -29,17 +29,17 @@ parser.add_argument('--pretrained_model_path', type=str, default=None,
 parser.add_argument('--pretrained_lora_path', type=str, default=None,
                     help='Specify pretrained lora path to load lora, default None')
 parser.add_argument('--train_name_or_path', type=str, required=True,
-                    help='Specify huggingface datasets name or local file path for train set, required')
+                    help='Specify huggingface data name or local file path for train set, required')
 parser.add_argument('--train_subset_name', type=str, default=None,
-                    help='Specify huggingface datasets subset name for train set, default None')
+                    help='Specify huggingface data subset name for train set, default None')
 parser.add_argument('--train_split_name', type=str, default='train',
-                    help='Specify huggingface datasets split name for train set, default `train`')
+                    help='Specify huggingface data split name for train set, default `train`')
 parser.add_argument('--valid_name_or_path', type=str, default=None,
-                    help='Specify huggingface datasets name or local file path for valid set, default None.')
+                    help='Specify huggingface data name or local file path for valid set, default None.')
 parser.add_argument('--valid_subset_name', type=str, default=None,
-                    help='Specify huggingface datasets subset name for valid set, default None')
+                    help='Specify huggingface data subset name for valid set, default None')
 parser.add_argument('--valid_split_name', type=str, default='train',
-                    help='Specify huggingface datasets split name for valid set, default `train`')
+                    help='Specify huggingface data split name for valid set, default `train`')
 parser.add_argument('--prompt_template', type=str, default=None,
                     help='Specify prompt_template like "xxx: {text}", default None.'
                          'This prompt will be applied for all text columns.'

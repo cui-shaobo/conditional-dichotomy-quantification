@@ -64,7 +64,7 @@ def main():
     column_mapping = scenario_column_mapping[scenario]
     file_mapping = scenario_file_mapping[scenario]
 
-    # Load datasets
+    # Load data
     train_file_path = os.path.join(file_mapping['dir'], file_mapping['train'])
     val_file_path = os.path.join(file_mapping['dir'], file_mapping['val'])
     test_file_path = os.path.join(file_mapping['dir'], file_mapping['test'])
@@ -73,7 +73,7 @@ def main():
     val_df = load_dataset(val_file_path, column_mapping)
     test_df = load_dataset(test_file_path, column_mapping)
 
-    # Combine datasets
+    # Combine data
     combined_df = pd.concat([train_df, val_df, test_df])
 
     # Statistics

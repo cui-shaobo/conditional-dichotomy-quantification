@@ -82,7 +82,7 @@ def main(args):
     train_file_path = os.path.join(scenario_dir, 'deltaCausal_train_selected_from_A_B.jsonl')
     test_file_path = os.path.join(scenario_dir, 'perspectrum_dev_processed_gpt-4o.jsonl')
 
-    # Load datasets
+    # Load data
     train_ds = load_dataset(train_file_path).shuffle()
     test_ds = load_dataset(test_file_path)
 
@@ -97,7 +97,7 @@ def main(args):
     )
 
 
-    # Tokenize datasets
+    # Tokenize data
     tokenizer_fn = DichotomyEDataTokenizer(dichotomye.tokenizer, dichotomye.max_length)
     train_ds = process_with_progress(train_ds, tokenizer_fn, desc="Tokenizing train dataset")
 

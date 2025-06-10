@@ -436,7 +436,7 @@ class AngleDataTokenizer:
 
     Example::
 
-            from datasets import load_dataset
+            from data import load_dataset
             from angle_emb import AnglE, AngleDataTokenizer
 
             # define dataset
