@@ -1,6 +1,6 @@
 bitsandbytes
 datasets
-peft
+peft==0.15.2
 boltons
 scikit-learn
 tqdm
