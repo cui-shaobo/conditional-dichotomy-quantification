@@ -99,7 +99,7 @@ opposite_scorer = DichotomyE.from_pretrained('shaobocui/opposite-score-debate-be
 # Calculate opposite-score (using cosine similarity as an example)
 opposite_score = opposite_scorer.calculate_opposite_score(ctx=context, sent1=sentence1, sent2=sentence2)
 print('Opposite Score:', opposite_score)
-# Output: Opposite Score: 1.5123178
+# Output: Opposite Score: 0.11086939
 ```
 
 
