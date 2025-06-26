@@ -1,10 +1,10 @@
 # Dichotomous Score
 *A lightweight toolkit for measuring how “opposite” two texts are when they share the same context.*
 
-<a href="https://pypi.org/project/opposite-score/"> <img src="https://img.shields.io/pypi/v/opposite-score?style=flat-square" alt="PyPI version" /> </a>
+Software: <a href="https://pypi.org/project/opposite-score/"> <img src="https://img.shields.io/pypi/v/opposite-score?style=flat-square" alt="PyPI version" /> </a>
 
-
-<a href="https://huggingface.co/shaobocui/opposite-score-debate-bert"> <img src="https://img.shields.io/badge/Hugging%20Face-opposite--score--debate--bert-yellow?logo=huggingface&style=flat-square" alt="debate-bert" /> </a> <a href="https://huggingface.co/shaobocui/opposite-score-debate-roberta"> <img src="https://img.shields.io/badge/Hugging%20Face-opposite--score--debate--roberta-yellow?logo=huggingface&style=flat-square" alt="debate-roberta" /> </a> <a href="https://huggingface.co/shaobocui/opposite-score-defeasibleNLI-bert"> <img src="https://img.shields.io/badge/Hugging%20Face-opposite--score--defeasibleNLI--bert-yellow?logo=huggingface&style=flat-square" alt="defeasibleNLI-bert" /> </a> <a href="https://huggingface.co/shaobocui/opposite-score-defeasibleNLI-roberta"> <img src="https://img.shields.io/badge/Hugging%20Face-opposite--score--defeasibleNLI--roberta-yellow?logo=huggingface&style=flat-square" alt="defeasibleNLI-roberta" /> </a> <a href="https://huggingface.co/shaobocui/opposite-score-causal-reasoning-bert"> <img src="https://img.shields.io/badge/Hugging%20Face-opposite--score--causal--reasoning--bert-yellow?logo=huggingface&style=flat-square" alt="causal-reasoning-bert" /> </a> <a href="https://huggingface.co/shaobocui/opposite-score-causal-reasoning-roberta"> <img src="https://img.shields.io/badge/Hugging%20Face-opposite--score--causal--reasoning--roberta-yellow?logo=huggingface&style=flat-square" alt="causal-reasoning-roberta" /> </a>
+Pretrained Models: <a href="https://huggingface.co/shaobocui/opposite-score-debate-bert"> <img src="https://img.shields.io/badge/Hugging%20Face-debate--opposite-yellow?logo=huggingface&style=flat-square" alt="debate-bert" /> </a> <a href="https://huggingface.co/shaobocui/opposite-score-defeasibleNLI-bert"> <img src="https://img.shields.io/badge/Hugging%20Face-defeasibleNLI--opposite-blue?logo=huggingface&style=flat-square" alt="defeasibleNLI-bert" /> </a>
+<a href="https://huggingface.co/shaobocui/opposite-score-causal-reasoning-bert"> <img src="https://img.shields.io/badge/Hugging%20Face-causal--reasoning--opposite-blueviolet?logo=huggingface&style=flat-square" alt="causal-reasoning-bert" /> </a> 
 
 ---
 ## 📚 Table of Contents
